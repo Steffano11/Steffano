@@ -1,92 +1,119 @@
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'open sans';
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size:500%; 
+    
 }
 
-.titulo {
-	text-align: center;
-	margin-top: 20px;
-	color: #333;
+nav ul {
+    background: grey;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: inline-flex;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    width: 150px;
 }
 
-.menu {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	background-color: #333;
-	text-align: center;
+nav li:hover {
+    background: black;
 }
 
-.menu li {
-	display: inline-block;
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    text-align: right;
 }
-
-.menu li a {
-	display: block;
-	padding: 10px 20px;
-	color: #fff;
-	text-decoration: none;
-}
-
-.menu li a:hover {
-	background-color: #555;
-}
-
-.subtitulo {
-	text-align: center;
-	color: #555;
-	margin: 20px 0;
-}
-
 .contenido {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-	background-color: #f9f9f9;
-	border: 1px solid #ccc;
-	box-shadow: 0 0 5px #ccc;
+    display: flex;
+    margin: 60px;
 }
+
+.contenido{
+    padding: 60px 0;
+    width: 70%;
+    max-width: 1000%;
+    margin: auto;
+}
+
 
 .secciones {
-	display: flex;
-	justify-content: space-between;
-}
+    display: flex;
+    align-items: center;
+    padding: 40px;
 
-.seccion-titulo {
-	color: #333;
-}
-
-.seccion-texto {
-	color: #555;
 }
 
 footer {
-	background-color: #333;
-	padding: 20px;
-	color: #fff;
-	text-align: center;
+    background: black;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
 }
 
-.contenedor-footer {
-	display: flex;
-	justify-content: center;
+footer p {
+    text-align: center;
+    padding: 20px;
 }
 
-.content-foo {
-	margin: 0 20px;
+.contenedor-footer
+{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
 }
 
-.content-foo h4 {
-	margin: 0;
+.content-foo
+{
+    text-align: center;    
 }
 
-.content-foo p {
-	margin: 10px 0;
+.content-foo h4
+{
+    color: white;
+    border-bottom: 3px solid rgb(89, 157, 213);
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
-  img {
-    width: 250px;
-    height: 250px; /* Restaura el tamaño original de las imágenes */
-  }
+.content-foo p > a
+{
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+}
+
+.content-foo p > a:hover
+{
+    font-weight: 400;
+    color: rgb(144, 17, 17);
+}
+
+.titulo-final
+{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: rgb(253, 253, 253);
 }
