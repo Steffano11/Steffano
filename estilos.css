@@ -117,3 +117,34 @@ footer p {
     margin: 20px 0 0 0;
     color: rgb(253, 253, 253);
 }
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 300%; /* Ajusta el tamaño de la fuente */
+  }
+
+  .contenido {
+    flex-direction: column; /* Cambia la dirección del contenido a columnas */
+  }
+
+  img {
+    width: 150px;
+    height: 150px; /* Ajusta el tamaño de las imágenes */
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 601px) {
+  h1 {
+    font-size: 500%; /* Restaura el tamaño de la fuente original */
+  }
+
+  .contenido {
+    flex-direction: row; /* Vuelve a la dirección del contenido a filas */
+  }
+
+  img {
+    width: 250px;
+    height: 250px; /* Restaura el tamaño original de las imágenes */
+  }
+}
