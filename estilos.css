@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body
+{
+    font-family: 'open sans';
+}
 h1{
     text-align: center;
     background-color: black;
